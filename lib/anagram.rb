@@ -5,6 +5,8 @@ class Anagram
     @name = name
   end
    def match(newarray)
-    array.find_all {|x| x.split("").sort == @name.split("").sort}
+    newarray.find_all do |x| 
+      x.split("").sort == @name.split("").sort
+      ebd
   end
 end
