@@ -7,6 +7,6 @@ class Anagram
    def match(newarray)
     newarray.find_all do |x| 
       x.split("").sort == @name.split("").sort
-      ebd
+    end
   end
 end
