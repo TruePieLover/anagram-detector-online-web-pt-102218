@@ -4,3 +4,7 @@ class Anagram
   def initialize(name)
     @name = name
   end
+   def match(newarray)
+    array.find_all {|x| x.split("").sort == @name.split("").sort}
+  end
+end
